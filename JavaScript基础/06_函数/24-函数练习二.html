@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    var a = prompt('请输入第一个数');
+    var b = prompt('请输入第二个数');
+    var c = prompt('请输入第三个数');
+    var array = [Number(a), Number(b), Number(c)];
+    console.log(array);
+
+    function getMax(arr) {
+      var Max = arr[0];
+      for (var index = 1; index < arr.length; index++){
+        if (Max < arr[index]) {
+          Max = arr[index];
+        }
+      }
+      return Max;
+    }
+
+    console.log(getMax(array));
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

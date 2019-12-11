@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    // 求数组中的最大值
+    function getArrMax(arr) {
+      var Max = arr[0];
+      for (let index = 1; index < arr.length; index++) {
+        if (Max < arr[index]) {
+          Max = arr[index];
+        }
+
+      }
+      return Max;
+    }
+
+    // var re = getArrMax([5, 2, 99, 101, 67, 77]);
+    // var re = getArrMax([3, 77, 44, 143, 99]);
+    var re = getArrMax([100, 66, 123]);
+
+    console.log(re);
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>
